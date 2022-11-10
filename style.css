@@ -74,11 +74,27 @@ body {
 footer {
     padding: 50px;
 }
+
+.body {
+    margin: 20px;
+}
+
 .body1 {
     display: flex;
     width: 100%;
 }
+.imagem01 {
+    margin: 20px;
+    width: 200px;
+    height: 180px;  
+}
+.imagem02 {
+    margin: 20px;
+    width: 200px;
+    height: 180px;
+}
 .body2{
     display: flex;
     width: 100%;
+    
 }
