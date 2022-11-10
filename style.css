@@ -1,8 +1,19 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
+>>>>>>> 51885c2f7676e27938257d3bf1c0ee3f2ad5e067
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     font-family: Arial, Helvetica, sans-serif;
+=======
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+>>>>>>> 51885c2f7676e27938257d3bf1c0ee3f2ad5e067
 }
 
 .cabeçalho {
@@ -10,7 +21,12 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 15px;    
+<<<<<<< HEAD
     border-bottom: 0.3px solid #6969695d; 
+=======
+    border-bottom: 0.3px solid #6969695d;
+    background-color: rgb(255, 255, 255);
+>>>>>>> 51885c2f7676e27938257d3bf1c0ee3f2ad5e067
 }
 
 .cabeçalho-logo{
@@ -35,9 +51,22 @@ body {
     cursor: pointer;
     display: none;
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 768px){
     .botao-menu {
+=======
+.botao-menu-on {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin-left: 60%;
+}
+
+@media screen and (max-width: 768px){
+    .botao-menu, .botao-menu-on {
+>>>>>>> 51885c2f7676e27938257d3bf1c0ee3f2ad5e067
         display: block;
     }    
     .cabeçalho-menu {
@@ -50,7 +79,46 @@ body {
         background-color: rgb(255, 255, 255);
         padding: 16px;
         animation-duration: 1s;
+<<<<<<< HEAD
         
         
     }
 }
+=======
+        margin-left: 100%;      
+    }
+}
+
+@keyframes showSidebar {
+    from {margin-left: 100%;}
+    top {margin-left: 60%;}
+}
+
+footer {
+    padding: 50px;
+}
+
+.body {
+    margin: 20px;
+}
+
+.body1 {
+    display: flex;
+    width: 100%;
+}
+.imagem01 {
+    margin: 20px;
+    width: 200px;
+    height: 180px;  
+}
+.imagem02 {
+    margin: 20px;
+    width: 200px;
+    height: 180px;
+}
+.body2{
+    display: flex;
+    width: 100%;
+    
+}
+>>>>>>> 51885c2f7676e27938257d3bf1c0ee3f2ad5e067
