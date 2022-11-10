@@ -15,7 +15,7 @@ body {
     align-items: center;
     padding: 15px;    
     border-bottom: 0.3px solid #6969695d;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .cabeçalho-logo{
@@ -40,9 +40,16 @@ body {
     cursor: pointer;
     display: none;
 }
+.botao-menu-on {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin-left: 60%;
+}
 
 @media screen and (max-width: 768px){
-    .botao-menu {
+    .botao-menu, .botao-menu-on {
         display: block;
     }    
     .cabeçalho-menu {
@@ -55,12 +62,12 @@ body {
         background-color: rgb(255, 255, 255);
         padding: 16px;
         animation-duration: 1s;
-        margin-left: 110%;        
+        margin-left: 100%;      
     }
 }
 
 @keyframes showSidebar {
-    from {margin-left: 110%;}
+    from {margin-left: 100%;}
     top {margin-left: 60%;}
 }
 
