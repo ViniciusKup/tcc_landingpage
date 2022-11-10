@@ -14,7 +14,8 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 15px;    
-    border-bottom: 0.3px solid #6969695d; 
+    border-bottom: 0.3px solid #6969695d;
+    background-color: white;
 }
 
 .cabeçalho-logo{
