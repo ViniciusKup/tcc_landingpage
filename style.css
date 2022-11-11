@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-=======
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 
->>>>>>> 51885c2f7676e27938257d3bf1c0ee3f2ad5e067
 body {
     margin: 0;
     padding: 0;
@@ -167,8 +164,6 @@ footer {
     
 }
 
-
->>>>>>> Stashed changes
 .body {
     margin: 20px;
 }
@@ -177,10 +172,7 @@ footer {
     display: flex;
     width: 100%;
 }
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 .imagem01 {
     margin: 20px;
     width: 200px;
@@ -197,11 +189,8 @@ footer {
     width: 100%;
     
 }
->>>>>>> 51885c2f7676e27938257d3bf1c0ee3f2ad5e067
-=======
 
 .body2{
     display: flex;
     width: 100%;
 }
->>>>>>> Stashed changes
