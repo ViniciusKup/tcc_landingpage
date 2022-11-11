@@ -9,6 +9,7 @@ body {
     font-family: 'Open Sans', sans-serif #0000;
 }
 
+/* ------ ESTILIZAÇÃO DO CABEÇALHO ------- */
 .cabeçalho {
     display: flex;
     flex-direction: row;
@@ -28,6 +29,10 @@ body {
     display: flex;
     gap: 32px;
     margin-left: 5%;
+    z-index: 1;
+}
+.cabeçalho-menu a:hover{
+    color:#cecdcd;
 }
 
 .cabeçalho-menu-item {
@@ -40,7 +45,6 @@ body {
     cursor: pointer;
     display: none;
 }
-
 .botao-menu-on {
     background-color: transparent;
     border: none;
@@ -52,33 +56,44 @@ body {
 @media screen and (max-width: 768px){
     .botao-menu, .botao-menu-on {
         display: block;
-    }    
-    .cabeçalho-menu {
-        position: absolute;
-        margin-left: 60%;
-        flex-direction: column;
-        top: 0;
-        height: 100%;
-        width: 35vh;
-        background-color: rgb(255, 255, 255);
-        padding: 16px;
-        animation-duration: 1s;
-        margin-left: 100%;      
-    }
+    } 
+
+.cabeçalho-menu {
+    position: absolute;
+    flex-direction: column;
+    align-items:center;
+    top: 0;
+    height: 100%;
+    width: 35vw;
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+    animation-duration: 1s;
+    margin-left: 100vw;
+    border-left: 0.3px solid #6969695d; 
+}
+
+.row-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
 
 @keyframes showSidebar {
-    from {margin-left: 100%;}
-    top {margin-left: 60%;}
+    from {margin-left: 100vw;}
+    top {margin-left: 60vw;}
 }
 
+
+/* ------ ESTILIZAÇÃO DO RODAPÉ ------- */
 footer {
     background: linear-gradient(180deg, #8B0D32 0%, #d1930dd3 0%, rgba(0, 0, 0, 0) 100%);
-    padding: 50px 0;
+    padding: 30px 0;
+    border-top: 0.4px solid #69696994;
 }
 
 .container-footer{
-    max-width: 1400px;
+    max-width: 100%;
     padding: 0 4%;
     margin: auto;
 }
@@ -136,10 +151,13 @@ footer {
 }
 .footer-col .midias-sociais a:hover{
     color: white;
-}
+} 
+
+/* ------ ESTILIZAÇÃO DO CONTEÚDO ------- */
 
 .body {
     margin: 20px;
+    position: relative;
 }
 
 .body1 {
