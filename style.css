@@ -12,8 +12,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 =======
     /* font-family: Arial, Helvetica, sans-serif; */
+<<<<<<< Updated upstream
     font-family: 'Open Sans', sans-serif;
 >>>>>>> 51885c2f7676e27938257d3bf1c0ee3f2ad5e067
+=======
+    font-family: 'Open Sans', sans-serif #0000;
+>>>>>>> Stashed changes
 }
 
 .cabeçalho {
@@ -95,9 +99,76 @@ body {
 }
 
 footer {
-    padding: 50px;
+    background: linear-gradient(180deg, #8B0D32 0%, #d1930dd3 0%, rgba(0, 0, 0, 0) 100%);
+    padding: 50px 0;
 }
 
+<<<<<<< Updated upstream
+=======
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer{
+   display: flex;
+   flex-wrap: wrap;
+}
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 20px;
+    color:#8B0D32;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+
+.footer-col ul li{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-col ul li:hover{
+    color:#cecdcd;
+    padding-left: 10px;
+}
+
+.footer-col .midias-sociais{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.footer-col .midias-sociais a:hover{
+    color: white;
+}
+
+.midias-icon{
+    
+}
+
+
+>>>>>>> Stashed changes
 .body {
     margin: 20px;
 }
@@ -106,6 +177,10 @@ footer {
     display: flex;
     width: 100%;
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 .imagem01 {
     margin: 20px;
     width: 200px;
@@ -116,9 +191,17 @@ footer {
     width: 200px;
     height: 180px;
 }
+<<<<<<< Updated upstream
 .body2{
     display: flex;
     width: 100%;
     
 }
 >>>>>>> 51885c2f7676e27938257d3bf1c0ee3f2ad5e067
+=======
+
+.body2{
+    display: flex;
+    width: 100%;
+}
+>>>>>>> Stashed changes
