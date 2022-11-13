@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,13 +10,16 @@ body {
 }
 
 /* ------ ESTILIZAÇÃO DO CABEÇALHO ------- */
-.cabeçalho {
+.header{
+    position: fixed;
+    width: 100%;
+    height: 5vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 15px;    
     border-bottom: 0.3px solid #6969695d;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
+    z-index:1;
 }
 
 .cabeçalho-logo{
@@ -25,51 +28,80 @@ body {
     cursor: pointer;
 }
 
-.cabeçalho-menu{
+.header-menu{
     display: flex;
     gap: 32px;
     margin-left: 5%;
     z-index: 1;
+    visibility: visible;
 }
-.cabeçalho-menu a:hover{
+.header-menu a:hover{
     color:#cecdcd;
 }
 
-.cabeçalho-menu-item {
+.header-menu-item {
     cursor: pointer;
 }
 
-.botao-menu {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+.menu-mobile{
+    padding-top: 5vh;
+    border-bottom: 2px solid;
     display: none;
 }
+
+.menu-mobile a{
+    list-style-type: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #8b0d33ee;
+    border-top:2px solid black ;
+}
+.menu-mobile a:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
 .botao-menu-on {
     background-color: transparent;
     border: none;
     cursor: pointer;
     display: none;
-    margin-left: 60%;
+    padding-left: 60%;
+}
+.botao-menu-on :hover{
+    color:black;
+    background-color: grey;
 }
 
-@media screen and (max-width: 768px){
-    .botao-menu, .botao-menu-on {
+@media (min-width: 769px){
+    .botao-menu-on {
+        display: none;
+    }
+
+    .header-menu {
+        visibility: visible;
+    }
+}
+
+@media (max-width: 1080px){
+    .botao-menu-on {
         display: block;
     } 
 
-.cabeçalho-menu {
+.header-menu {
     position: absolute;
     flex-direction: column;
     align-items:center;
     top: 0;
-    height: 100%;
+    border-bottom: 0.4px solid rgba(112, 112, 112, 0.322);
     width: 35vw;
     background-color: rgb(255, 255, 255);
     padding: 16px;
     animation-duration: 1s;
-    margin-left: 100vw;
-    border-left: 0.3px solid #6969695d; 
+    right: 0;
+    border-left: 0.3px solid #6969695d;
+    visibility: hidden;
 }
 
 .row-footer {
@@ -155,6 +187,11 @@ footer {
 
 /* ------ ESTILIZAÇÃO DO CONTEÚDO ------- */
 
+.conteudo {
+    padding: 5vh;
+    width: 90vw;
+    margin: auto;
+}
 .body {
     margin: 20px;
     position: relative;

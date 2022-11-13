@@ -8,30 +8,38 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header class="cabeçalho" id="header">
+    <header class="header" id="header">
         <img class="cabeçalho-logo" src="images/Logo.png" alt="Logo">
+
         <button onclick="toogleSidebar()" class="botao-menu-on">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
         </button>
-        <nav class="cabeçalho-menu" id="navigationHeader">
-            <button onclick="toogleSidebar()" class="botao-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </button>
-            <a class="cabeçalho-menu-item">Agendamento de Exames</a>
-            <a class="cabeçalho-menu-item">Serviços</a>
-            <a class="cabeçalho-menu-item">Resultado de Exames</a>
-            <a class="cabeçalho-menu-item">Unidades</a>
-            <a class="cabeçalho-menu-item">Convênios</a>
-            <a class="cabeçalho-menu-item">Ajuda</a>
+
+        <nav class="header-menu" id="navigationHeader">
+            <a class="header-menu-item">Agendamento de Exames</a>
+            <a class="header-menu-item">Serviços</a>
+            <a class="header-menu-item">Resultado de Exames</a>
+            <a class="header-menu-item">Unidades</a>
+            <a class="header-menu-item">Convênios</a>
+            <a class="header-menu-item">Ajuda</a>
         </nav>
         
     </header>
 
-    <main tabindex="0" onclick="closeSidebar()" class="conteudo" id="content">
+        <div class="menu-mobile" id="itensMobile">
+            <ul>
+                <li><a class="header-menu-item">Agendamento de Exames</a></li>
+                <li><a class="header-menu-item">Serviços</a></li>
+                <li><a class="header-menu-item">Resultado de Exames</a></li>
+                <li><a class="header-menu-item">Unidades</a></li>
+                <li><a class="header-menu-item">Convênios</a></li>
+                <li><a class="header-menu-item">Ajuda</a></li>
+            </ul>
+        </div>
+
+    <main onclick="closeSidebar()" class="conteudo" id="content">
         <div class = "body">
             <div class="body1">
                 <div class="quemsomos">
@@ -121,32 +129,48 @@
     var conteudo = document.getElementById('content')
     var showSidebar = false;
 
+
+function toogleSidebar(){
+    if (itensMobile.style.display == 'block'){
+        itensMobile.style.display = 'none'
+    } else {
+        itensMobile.style.display = 'block'
+    }
+}
+
+
+
+
+
     /* Função chamada ao clicar no botão do menu para abrir e fechar o menu lateral */
-    function toogleSidebar(){
-        showSidebar = !showSidebar;
-        if(showSidebar)
-        {
-            navigationHeader.style.marginLeft = '60vw';
-            navigationHeader.style.animationName = 'showSidebar';
-            // content.style.filter = 'blur(2px)';
-        }
-        else {
-            navigationHeader.style.marginLeft = '100vw';
-            navigationHeader.style.animationName = '';
-            // content.style.filter = '';
-        }
-    }
+    // function toogleSidebar(){
+    //     showSidebar = !showSidebar;
+    //     if(showSidebar)
+    //     {
+    //         navigationHeader.style.visibility= 'visible';
+    //         navigationHeader.style.animationName = 'showSidebar';
+    //         // content.style.filter = 'blur(2px)';
+    //     }
+    //     else {
+    //         navigationHeader.style.visibility= 'hidden';
+    //         navigationHeader.style.animationName = '';
+    //         // content.style.filter = '';
+    //     }
+    // }
 
-    function closeSidebar(){
-        if(showSidebar){
-            toogleSidebar();
-        }
-    }
+    // function closeSidebar(){
+    //     if(showSidebar){
+    //         toogleSidebar();
+    //     }
+    // }
 
-    window.addEventListener('resize', function(event) {
-        if(window.innerWidth > 768 && showSidebar){
-            toogleSidebar();
-        }
-    });
+    // window.addEventListener('resize', function(event) {
+    //     if(window.innerWidth > 768){
+    //         navigationHeader.style.visibility= 'visible';           ;
+    //     }
+    //     else(window.innerWidth > 768){
+            
+    //     }
+    // });
 </script>
 </html>
