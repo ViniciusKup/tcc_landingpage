@@ -39,7 +39,7 @@
             </ul>
         </div>
 
-    <main onclick="closeSidebar()" class="conteudo" id="content">
+    <main class="conteudo" id="content">
         <div class = "body">
             <div class="body1">
                 <div class="quemsomos">
@@ -118,28 +118,26 @@
                 </div>
             </div>
         </div>
-        <p style="text-align:center;margin-bottom: 0;">GoldenLab | Todos os direitos reservados - Versão 1.0.0</p>
+        <p>GoldenLab | Todos os direitos reservados - Versão 1.0.0</p>
     </footer>
 </body>
 <script>
 
     /*----- SCRIPT MENU-RESPONSIVO -----*/
-   var header = document.getElementById('header');
-    var navigationHeader = document.getElementById('navigationHeader')
-    var conteudo = document.getElementById('content')
-    var showSidebar = false;
-
-
 function toogleSidebar(){
     if (itensMobile.style.display == 'block'){
-        itensMobile.style.display = 'none'
+        itensMobile.style.display = 'none';
     } else {
-        itensMobile.style.display = 'block'
+        itensMobile.style.display = 'block';
     }
 }
 
 
-
+window.addEventListener('resize', function(event){
+        if(window.innerWidth > 1080 ){
+            itensMobile.style.display= 'none';
+        }
+})
 
 
     /* Função chamada ao clicar no botão do menu para abrir e fechar o menu lateral */
