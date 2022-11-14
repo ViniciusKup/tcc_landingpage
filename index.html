@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header" id="header">
-        <img class="cabeçalho-logo" src="images/Logo.png" alt="Logo">
+        <a href="#content"><img class="cabeçalho-logo" src="images/Logo.png" alt="Logo"></a>
 
         <button onclick="toogleSidebar()" class="botao-menu-on">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -43,7 +43,7 @@
         <div class = "body">
             <div class="body1">
                 <div class="quemsomos">
-                    <h1>Quem Somos?</h1> 
+                    <h1 id="quemSomos">Quem Somos?</h1> 
                     <p>Fundado em novembro de 2022 o laboratório Goldenlab..</p>
                 </div>
 
@@ -79,7 +79,7 @@
                 <div class="footer-col">
                     <h4>Institucional</h4>
                     <ul>
-                        <li>Quem Somos</li>
+                        <a href="#quemSomos"><li>Quem Somos</li></a>
                         <li>Trabalhe Conosco</li>
                         <li>Fale Conosco</li>
                     </ul>
@@ -129,6 +129,7 @@ function toogleSidebar(){
         itensMobile.style.display = 'none';
     } else {
         itensMobile.style.display = 'block';
+
     }
 }
 

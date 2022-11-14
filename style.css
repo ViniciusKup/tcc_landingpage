@@ -8,11 +8,19 @@
     font-family: 'Open Sans', sans-serif #0000;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+:target {
+    scroll-margin-top: .8em;
+}
+
 /* ------ ESTILIZAÇÃO DO CABEÇALHO ------- */
 .header{
     position: fixed;
     width: 100%;
-    height: 5vh;
+    height: 8vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -44,7 +52,7 @@
 }
 
 .menu-mobile{
-    padding-top: 5vh;
+    padding-top: 8vh;
     border-bottom: 2px solid;
     display: none;
 }
@@ -91,6 +99,7 @@
 .botao-menu-on {
     display: block;
 } 
+
     
 .header-menu {
     visibility: hidden;
@@ -103,10 +112,6 @@
 }
 }
 
-@keyframes showSidebar {
-    from {margin-left: 100vw;}
-    top {margin-left: 60vw;}
-}
 
 
 /* ------ ESTILIZAÇÃO DO RODAPÉ ------- */
@@ -135,6 +140,10 @@ footer p{
 .footer-col{
     width: 20%;
     padding: 0 15px;
+}
+.footer-col a{
+text-decoration: none;
+color: black;
 }
 
 .footer-col h4{
@@ -185,7 +194,7 @@ footer p{
 /* ------ ESTILIZAÇÃO DO CONTEÚDO ------- */
 
 .conteudo {
-    padding: 5vh;
+    padding: 8vh;
     width: 90vw;
     margin: auto;
 }
@@ -198,6 +207,9 @@ footer p{
     display: flex;
     width: 100%;
 }
+.body1 p{
+    margin-top: 1vh;
+} 
 
 .imagem01 {
     margin: 20px;
