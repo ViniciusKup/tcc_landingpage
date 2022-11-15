@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoldenLab</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="./images/Meu projeto.png" type="image/x-icon">
 </head>
 <body>
     <header class="header" id="header">
@@ -75,7 +76,34 @@
             <h1>Nossos Serviços</h1>
         </div>
         <div>
-            <h2>Fale Conosco</h2>
+            <div class="fale-conosco">
+                <h2>Fale Conosco</h2>
+                <form action="pagina-sucesso.html" class="formulario" onsubmit="EnviarFormulario(event)">
+                    <div>
+                    <label for="nome">
+                        Nome:
+                    </label>
+                        <input type="text" class="input-form" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div>
+                    <label for="email">
+                        E-mail:
+                    </label>
+                        <input type="text" class="input-form" id="email" placeholder="Digite seu e-mail">
+                    </div>
+                    <div>
+                    <label for="mensagem">
+                        Mensagem:
+                    </label>
+                        <textarea class="input-form" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                    <div class="botao">
+                    <button class="formulario-botao formulario-botao-responsivo" id="formulario-botao" type="submit">
+                        Enviar
+                    </button>
+                    </div>
+                </form>
+              </div>
         </div>
     </main>
     
@@ -139,12 +167,37 @@ function toogleSidebar(){
     }
 }
 
-
 window.addEventListener('resize', function(event){
         if(window.innerWidth > 1080 ){
             itensMobile.style.display= 'none';
         }
 })
+
+const EnviarFormulario = (event) => {
+  nome = document.getElementById("nome").value
+  email = document.getElementById("email").value
+  mensagem = document.getElementById("mensagem").value
+  const validar = validarCampos(nome, email, mensagem)
+  if(validar) {
+    alert(validar)
+    event.preventDefault()
+    return
+  }
+  return alert('Formulário preenchido com sucesso!')
+}
+
+const validarCampos = (nome, email, mensagem) => {
+  if(nome === '') {
+    return 'Nome precisa ser preenchido!'
+  }
+  if(!email.includes('@') || !email.includes('.')) {
+    return 'E-mail inválido!'
+  }
+  if(mensagem.length < 10) {
+    return 'Mensagem com no mínimo 10 caracteres!'
+  }
+  return false
+}
 
 </script>
 </html>
