@@ -230,3 +230,29 @@ color: black;
     display: flex;
     width: 100%;
 }
+/*--ESTILIZAÇÃO QUEM SOMOS--*/
+.quemsomos p{
+    width: 50%;
+    display: flex;  
+}
+/*--ESTILIZAÇÃO IMAGEM 01--*/
+.imagem01{
+    width: 500px;
+    display: flex;
+    padding: 10px;
+}
+/*---ESTILIZAÇÃO DO TIPOS DE EXAMES ---*/
+.exames li:hover{
+    color:gray;
+    cursor: pointer;
+}
+.exames {
+    width: 50%;
+    
+    
+}
+/*-- ESTILIZAÇÃO IMAGEM 02--*/
+.imagem02{
+    width: 50%;
+    display: flex;
+}
