@@ -1,19 +1,3 @@
-   /*----- SCRIPT MENU-RESPONSIVO -----*/
-function toogleSidebar(){
-if (itensMobile.style.display == 'block'){
-    itensMobile.style.display = 'none'
-} else {
-    itensMobile.style.display = 'block'
-    itensMobile.style.position = ''
-}
-}
-
-window.addEventListener('resize', function(event){
-    if(window.innerWidth > 1080 ){
-        itensMobile.style.display= 'none'
-    }
-})
-
 const EnviarFormulario = (event) => {
   nome = document.getElementById("nome").value
   email = document.getElementById("email").value
