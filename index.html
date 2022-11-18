@@ -83,27 +83,30 @@
                 <form  class="formulario" onsubmit="EnviarFormulario(event)">
                     <h2>Fale Conosco</h2>
                     <div>
-                    <label for="nome">
-                        Nome:
-                    </label>
-                        <input type="text" class="input-form" id="nome" placeholder="Digite seu nome">
+                        <label for="nome">
+                            Nome:
+                        </label>
+                            <input onclick="paragrafoSome()" type="text" class="input-form" id="nome" placeholder="Digite seu nome">
+                            <p id="nomeInvalido">Nome inválido, por favor digite novamente.</p>
+                        </div>
+                    <div>
+                        <label for="email">
+                            E-mail:
+                        </label>
+                            <input onclick="paragrafoSome2()"type="text" class="input-form" id="email" placeholder="Digite seu e-mail">
+                            <p id="emailInvalido">E-mail inválido, por favor digite novamente.</p>
                     </div>
                     <div>
-                    <label for="email">
-                        E-mail:
-                    </label>
-                        <input type="text" class="input-form" id="email" placeholder="Digite seu e-mail">
-                    </div>
-                    <div>
-                    <label for="mensagem">
-                        Mensagem:
-                    </label>
-                        <textarea class="input-form" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+                        <label for="mensagem">
+                            Mensagem:
+                        </label>
+                            <textarea onclick="paragrafoSome3()" class="input-form" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+                            <p id="mensagemInvalida">Mensagem curta, por favor digite novamente com no mínimo 10 caracteres.</p>
                     </div>
                     <div class="botao">
-                    <button class="formulario-botao formulario-botao-responsivo" id="formulario-botao" type="submit">
-                        Enviar
-                    </button>
+                        <button class="formulario-botao formulario-botao-responsivo" id="formulario-botao" type="submit">
+                            Enviar
+                        </button>
                     </div>
                 </form>
               </div>
@@ -162,7 +165,7 @@
 <script>
 
    /*----- SCRIPT MENU-RESPONSIVO -----*/
-   function toogleSidebar(){
+function toogleSidebar(){
 if (itensMobile.style.display == 'block'){
     itensMobile.style.display = 'none'
 } else {
@@ -176,6 +179,18 @@ window.addEventListener('resize', function(event){
         itensMobile.style.display= 'none'
     }
 })
+
+function paragrafoSome(){
+    nomeInvalido.style.display = 'none'
+}
+
+function paragrafoSome2(){
+    emailInvalido.style.display = 'none'
+}
+
+function paragrafoSome3(){
+    mensagemInvalida.style.display = 'none'
+}
 
 </script>
 </html>

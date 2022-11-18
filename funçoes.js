@@ -4,22 +4,34 @@ const EnviarFormulario = (event) => {
   mensagem = document.getElementById("mensagem").value
   const validar = validarCampos(nome, email, mensagem)
   if(validar) {
-    alert(validar)
+    // alert(validar)
+    if(validar == 'block-nome'){
+      nomeInvalido.style.display = 'block'
+    }
+    if(validar == 'block-email'){
+      emailInvalido.style.display = 'block'
+    }
+    if(validar == 'block-mensagem'){
+      mensagemInvalida.style.display = 'block'
+    }
     event.preventDefault()
     return
   }
+  
   return alert('Formulário preenchido com sucesso!')
 }
 
 const validarCampos = (nome, email, mensagem) => {
   if(nome === '') {
-    return 'Nome precisa ser preenchido!'
+    return 'block-nome'
   }
+
   if(!email.includes('@') || !email.includes('.')) {
-    return 'E-mail inválido!'
+    return'block-email'
   }
+
   if(mensagem.length < 10) {
-    return 'Mensagem com no mínimo 10 caracteres!'
+    return 'block-mensagem'
   }
   return false
 }

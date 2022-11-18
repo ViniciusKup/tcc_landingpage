@@ -294,6 +294,10 @@ footer p{
 .formulario input {
     height: 40px;
 }
+.formulario p{
+    color: red;
+    display: none;
+}
 
 @media (max-width: 768px) {
 .fale-conosco {
