@@ -230,3 +230,42 @@ color: black;
     display: flex;
     width: 100%;
 }
+.imagens-nossos-servicos{
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    margin-bottom: 1vh;
+    border: 0.2px solid;
+    border-radius: 50%;
+}
+.nossos-servicos{
+    width: auto;
+    height: auto;
+    max-width: 900px;
+    min-width: 330px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vh;
+    padding: 2vh;
+    border: 0.4px solid;
+    margin-bottom: 2vh;
+}
+.nossos-servicos p{
+    text-indent: 2em;
+    text-align: center;
+    width: 20em;
+    margin: 0.5vh;
+}
+.nossos-servicos h3{
+    margin: 1vh;
+    color: #8B0D32;
+    font-weight: bold;
+}
+.imagem-servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
