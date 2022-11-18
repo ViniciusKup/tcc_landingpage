@@ -32,3 +32,5 @@ describe('validarCampos testes', () => {
       expect(validarCampos(nome, email, mensagem)).toBe(false)
     })
   })
+
+  

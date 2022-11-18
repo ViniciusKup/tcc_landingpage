@@ -13,7 +13,7 @@ html {
   }
   
 :target {
-    scroll-margin-top: 0.8em;
+    scroll-margin-top: 8vh;
 }
 
 /* ------ ESTILIZAÇÃO DO CABEÇALHO ------- */
@@ -55,7 +55,7 @@ header{
     padding-top: 8vh;
     border-bottom: 2px solid;
     display: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 .menu-mobile a{
@@ -63,7 +63,7 @@ header{
     display: block;
     padding: 10px;
     text-align: center;
-    background-color: #8b0d33db;
+    background-color: #8b0d33;
     border-top:2px solid black ;
 }
 
