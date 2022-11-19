@@ -232,14 +232,21 @@ color: black;
 }
 /*--ESTILIZAÇÃO QUEM SOMOS--*/
 .quemsomos p{
-    width: 50%;
-    display: flex;  
-}
-/*--ESTILIZAÇÃO IMAGEM 01--*/
-.imagem01{
     width: 500px;
     display: flex;
-    padding: 10px;
+    padding: 20px;  
+}
+/*--ESTILIZAÇÃO IMAGEM 01--*/
+.imagem001{
+    width: 550px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.imagem01{
+    width: 600px;
+    display: flex;
+    flex-direction: end;
 }
 /*---ESTILIZAÇÃO DO TIPOS DE EXAMES ---*/
 .exames li:hover{
@@ -247,12 +254,22 @@ color: black;
     cursor: pointer;
 }
 .exames {
-    width: 50%;
-    
-    
+    display: flex;
+    background-color: white;
+    width: 450px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 /*-- ESTILIZAÇÃO IMAGEM 02--*/
 .imagem02{
-    width: 50%;
+    width: 600px;
     display: flex;
+}
+.ex li{
+    height: 25px;
+}
+.ex h2{
+    height: 45px;
 }
