@@ -231,8 +231,9 @@ footer p{
     width: 50px;
     align-items: center;
     margin-bottom: 1vh;
-    border: 0.2px solid;
+    border: 0.2px solid black;
     border-radius: 50%;
+    cursor: pointer;
 }
 .nossos-servicos{
     width: auto;
