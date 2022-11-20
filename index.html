@@ -73,8 +73,34 @@
         <div>
             <h2>Principais Exames</h2>
         </div>
+
         <div>
-            <h1>Nossos Serviços</h1>
+            <h1>Nossos Serviços:</h1>
+            <div class="nossos-servicos">
+                <div class="imagem-servicos">
+                    <a href="#"><img class= "imagens-nossos-servicos" src="images/calendar.png" alt="imagem agendamento de exames"></a>
+                    <h3>Agendamento de Exames!</h3>
+                    <p>Encontre o exame que você precisa, através do nome, especialidade ou unidade de atendimento da sua preferência. Remarque e cancele a qualquer momento.</p>
+                </div>
+
+                <div class="imagem-servicos">
+                    <a href="#"><img class= "imagens-nossos-servicos" src="images/resultados.png" alt="resulado de exames"></a>
+                    <h3>Resultados de Exames!</h3>
+                    <p>Para visualizar seus exames e resultados com praticidade e agilidade.</p>
+                </div>
+
+                <div class="imagem-servicos">
+                    <a href="#"><img class= "imagens-nossos-servicos" src="images/protecao.png" alt="convênios atendidos"></a>
+                    <h3>Convênios Atendidos!</h3>
+                    <p>Selecione a sua operadora de saúde e confira a lista de planos atendidos e documentos necessários para a realização dos seus exames com segurança e praticidade.</p>
+                </div>
+
+                <div class="imagem-servicos">
+                    <a href="#"><img class= "imagens-nossos-servicos" src="images/exame-medico.png" alt="exames domiciliar"></a>
+                    <h3>Exames domiciliar!</h3>
+                    <p>Cuide da sua saúde onde você estiver. Realize exames no conforto de sua casa.</p>
+                </div>
+            </div>
         </div>
 
         <div>
@@ -83,23 +109,19 @@
                 <form  class="formulario" onsubmit="EnviarFormulario(event)">
                     <h2>Fale Conosco</h2>
                     <div>
-                        <label for="nome">
-                            Nome:
-                        </label>
+                        <label for="nome">Nome:</label>
                             <input onclick="paragrafoSome()" type="text" class="input-form" id="nome" placeholder="Digite seu nome">
                             <p id="nomeInvalido">Nome inválido, por favor digite novamente.</p>
-                        </div>
+                    </div>
+
                     <div>
-                        <label for="email">
-                            E-mail:
-                        </label>
+                        <label for="email">E-mail:</label>
                             <input onclick="paragrafoSome2()"type="text" class="input-form" id="email" placeholder="Digite seu e-mail">
                             <p id="emailInvalido">E-mail inválido, por favor digite novamente.</p>
                     </div>
+
                     <div>
-                        <label for="mensagem">
-                            Mensagem:
-                        </label>
+                        <label for="mensagem">Mensagem:</label>
                             <textarea onclick="paragrafoSome3()" class="input-form" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
                             <p id="mensagemInvalida">Mensagem curta, por favor digite novamente com no mínimo 10 caracteres.</p>
                     </div>
@@ -109,8 +131,7 @@
                         </button>
                     </div>
                 </form>
-              </div>
-        </div>
+            </div>
         </div>
     </main>
     
