@@ -13,11 +13,11 @@ html {
   }
   
 :target {
-    scroll-margin-top: .8em;
+    scroll-margin-top: 8vh;
 }
 
 /* ------ ESTILIZAÇÃO DO CABEÇALHO ------- */
-.header{
+header{
     position: fixed;
     width: 100%;
     height: 8vh;
@@ -55,7 +55,7 @@ html {
     padding-top: 8vh;
     border-bottom: 2px solid;
     display: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 .menu-mobile a{
@@ -63,16 +63,13 @@ html {
     display: block;
     padding: 10px;
     text-align: center;
-    background-color: #8b0d33db;
+    background-color: #8b0d33;
     border-top:2px solid black ;
 }
 
 .menu-mobile a:hover{
     background-color: gray;
     cursor: pointer;
-}
-.button-nav {
-    padding-right: 25%;
 }
 .botao-menu-on {
     background-color: transparent;
@@ -86,15 +83,7 @@ html {
     background-color: grey;
 }
 
-@media (min-width: 769px){
-.botao-menu-on {
-    display: none;
-}
-
-.header-menu {
-    visibility: visible;
-}
-}
+/*------ Responsividade ------*/
 
 
 @media (max-width: 1080px){
@@ -106,9 +95,11 @@ html {
     width: 100%;
 }
 .header-menu {
-    visibility: hidden;
+    display: none;
+}
 }
 
+@media (max-width: 768px){
 .row-footer {
     display: flex;
     flex-direction: column;
@@ -129,8 +120,6 @@ html {
     flex-wrap: wrap;
 }
 }
-
-
 
 /* ------ ESTILIZAÇÃO DO RODAPÉ ------- */
 footer {
@@ -153,6 +142,8 @@ footer p{
 .row-footer{
    display: flex;
    flex-wrap: wrap;
+   justify-content: flex-start;
+   gap: 30px;
 }
 
 .footer-col{
@@ -160,8 +151,8 @@ footer p{
     padding: 0 15px;
 }
 .footer-col a{
-text-decoration: none;
-color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .footer-col h4{
@@ -205,15 +196,20 @@ color: black;
     text-decoration: none;
     transition: all 0.5s ease;
 }
+
 .footer-col .midias-sociais a:hover{
     color: white;
 } 
 
+
 /* ------ ESTILIZAÇÃO DO CONTEÚDO ------- */
 
 .conteudo {
-    padding: 8vh;
-    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8vh;
+    /* width: 90vw; */
     margin: auto;
 }
 .body-quem-somos {
@@ -318,3 +314,141 @@ color: black;
     text-decoration: none;
     list-style: none;
 } */
+.imagens-nossos-servicos{
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    margin-bottom: 1vh;
+    border: 0.2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nossos-servicos{
+    width: auto;
+    height: auto;
+    max-width: 900px;
+    min-width: 330px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vh;
+    padding: 2vh;
+    border: 0.4px solid;
+    margin-bottom: 2vh;
+}
+.nossos-servicos p{
+    text-indent: 2em;
+    text-align: center;
+    width: 20em;
+    margin: 0.5vh;
+}
+.nossos-servicos h3{
+    margin: 1vh;
+    color: #8B0D32;
+    font-weight: bold;
+}
+.imagem-servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/*------ Estilização Fale conosco ------*/
+
+.fale-conosco {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* padding-top: 5px; */
+    background-color: white;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.6);
+    width: 600px;
+    border-radius: 5px;
+    padding-bottom: 25px;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+.fale-conosco h2 {
+    text-align: center;
+  }
+
+.formulario input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    background-color: aliceblue;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 4px;
+  }
+  
+.formulario-botao {
+    background-color:#8B0D32;
+    height: 50px;
+    border: 0px;
+    border-radius: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 1px 5px 10px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+  }
+
+.formulario {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+    margin: 4vh;
+}
+
+.botao {
+    display: flex;
+    flex:1;
+    justify-content: center;
+  }
+
+.formulario-botao-responsivo {
+    width: 200px;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input {
+    height: 40px;
+}
+.formulario p{
+    color: red;
+    display: none;
+}
+
+@media (max-width: 768px) {
+.fale-conosco {
+    margin: 0px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0px;
+    margin-top: 5vh;
+}
+.fale-conosco h2{
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario-botao-responsivo {
+    width: 100%;
+}
+}
+
