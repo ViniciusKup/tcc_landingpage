@@ -114,6 +114,20 @@ html {
     flex-direction: column;
     align-items: center;
 }
+.body-quem-somos{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center
+}
+.body1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.body2{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 }
 
 
@@ -202,42 +216,69 @@ color: black;
     width: 90vw;
     margin: auto;
 }
-.body {
-    margin: 20px;
-    position: relative;
+.body-quem-somos {
+    /* margin: 20px; */
+    /* position: relative; */
 }
 
 .body1 {
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    width: auto;
+    /* align-items: center; */
+    margin-top: 20px;
+    align-items: flex-start;
 }
-.body1 p{
-    margin-top: 1vh;
+
+.body-quem-somos p{
+    margin-top: 5em;
+    text-align:justify;
+    max-width: 500px;
 } 
 
 .imagem01 {
     margin: 20px;
-    width: 200px;
-    height: 180px;  
+    width: 600px;
+    height: 400px;
+    border-radius: 2%;
 }
 .imagem02 {
     margin: 20px;
-    width: 200px;
-    height: 180px;
+    width: 500px;
+    height: 300px;
+    border-radius: 2%;
 }
-
 .body2{
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    width: auto;
 }
+.principais-exames {
+    margin: 20px;
+}
+.principais-exames ul{
+    margin-top: 3em;
+}
+.principais-exames li{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 10px;
+}
+.principais-exames li:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+
+
 /*--ESTILIZAÇÃO QUEM SOMOS--*/
-.quemsomos p{
-    width: 500px;
+/*.quemsomos p{
+    /* width: 500px;
     display: flex;
-    padding: 20px;  
-}
+    padding: 20px;   
+}*/
 /*--ESTILIZAÇÃO IMAGEM 01--*/
-.imagem001{
+/* .imagem001{
     width: 550px;
     background-color: white;
     display: flex;
@@ -247,9 +288,9 @@ color: black;
     width: 600px;
     display: flex;
     flex-direction: end;
-}
+} */
 /*---ESTILIZAÇÃO DO TIPOS DE EXAMES ---*/
-.exames li:hover{
+/* .exames li:hover{
     color:gray;
     cursor: pointer;
 }
@@ -261,9 +302,9 @@ color: black;
     justify-content: center;
     align-items: center;
 
-}
+} */
 /*-- ESTILIZAÇÃO IMAGEM 02--*/
-.imagem02{
+/* .imagem02{
     width: 600px;
     display: flex;
 }
@@ -273,3 +314,7 @@ color: black;
 .ex h2{
     height: 45px;
 }
+.ex ul{
+    text-decoration: none;
+    list-style: none;
+} */
