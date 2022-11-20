@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldenLab</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="cabeçalho" id="header">
+        <img class="cabeçalho-logo" src="images/Logo.png" alt="Logo">
+        <button onclick="toogleSidebar()" class="botao-menu-on">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <nav class="cabeçalho-menu" id="navigationHeader">
+            <button onclick="toogleSidebar()" class="botao-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a class="cabeçalho-menu-item">Agendamento de Exames</a>
+            <a class="cabeçalho-menu-item">Serviços</a>
+            <a class="cabeçalho-menu-item">Resultado de Exames</a>
+            <a class="cabeçalho-menu-item">Unidades</a>
+            <a class="cabeçalho-menu-item">Convênios</a>
+            <a class="cabeçalho-menu-item">Ajuda</a>
+        </nav>
+        
+    </header>
+
+    <main tabindex="0" onclick="closeSidebar()" class="conteudo" id="content">
+        
+        <div class = "body">
+            <div class="body1">
+                <div class="quemsomos">
+                    <h1>Quem Somos?</h1> 
+                    <p>Fundado em novembro de 2022 o laboratório Goldenlab..</p>
+                </div>
+
+                <img class="imagem01" src="images/imagem01.png" alt="">
+            </div>
+
+            <div class="body2">
+                <img class="imagem02" src="images/imagem02.jpg">
+
+                <div class="tiposdeexames">
+                    <h1>Tipos de Exames</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="encontre-seus-exames">
+        
+            <h1>Procure seus Exames</h1>
+            <div id="divBusca">     
+                <input type="text" id="txtBusca" name="txtBuscaExamew" placeholder="Encontre seus exames...">
+                <img src="./images/lupa.png.png" id="btnBusca" alt="Buscar" >   
+            </div>
+        </div>
+        <div>
+            <h2>Principais Exames</h2>
+            <div class="exames">
+                <img src="./images/img-exames.jpg" id="img-exames"alt="img-exames">
+            </div>
+                <div class="Lista-exame">
+                    <ul>
+                        <li class="pcr">PCR C19</li>
+                        <li class="colesterol">Colesterol</li>
+                        <li class="glicemia">Gliceima</li>
+                        <li class="hemograma">Hemograma Completo</li>
+                    </ul>
+
+                </div>
+            </div>  
+        </div>
+        <div>
+            <h1>Nossos Serviços</h1>
+        </div>
+        <div>
+            <h2>Fale Conosco</h2>
+        </div>
+    </main>
+    
+    <footer>
+        <div class ="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li>Quem Somos</li>
+                        <li>Trabalhe Conosco</li>
+                        <li>Fale Conosco</li>
+                    </ul>
+                <div class="footer-col"></div>
+                    <h4>Atendimento</h4>
+                    <ul>
+                        <li>Unidades GoldenLab</li>
+                        <li>Contatos</li>
+                    </ul>
+                <div class="midias-sociais"></div>
+                    <h4>Nossos Canais</h4>
+                    <ul>
+                        <li>
+                            <a class="facebook-icon" href="https://pt-br.facebook.com/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var header = document.getElementById('header');
+    var navigationHeader = document.getElementById('navigationHeader')
+    var conteudo = document.getElementById('content')
+    var showSidebar = false;
+
+    function toogleSidebar(){
+        showSidebar = !showSidebar;
+        if(showSidebar)
+        {
+            navigationHeader.style.marginLeft = '60%';
+            navigationHeader.style.animationName = 'showSidebar';
+            // content.style.filter = 'blur(2px)';
+        }
+        else {
+            navigationHeader.style.marginLeft = '100%';
+            navigationHeader.style.animationName = '';
+            // content.style.filter = '';
+        }
+    }
+
+    function closeSidebar(){
+        if(showSidebar){
+            toogleSidebar();
+        }
+    }
+
+    window.addEventListener('resize', function(event) {
+        if(window.innerWidth > 768 && showSidebar){
+            toogleSidebar();
+        }
+    });
+</script>
+</html>
