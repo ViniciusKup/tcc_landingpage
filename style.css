@@ -97,6 +97,17 @@ header{
 .header-menu {
     display: none;
 }
+.body1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+}
+
+@media (max-width: 840px){
+.body2{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 }
 
 @media (max-width: 768px){
@@ -108,17 +119,20 @@ header{
 .body-quem-somos{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    justify-content: center
-}
-.body1 {
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items:stretch;
+    justify-content: center;
+    
 }
 .body2{
     flex-direction: row;
     flex-wrap: wrap;
 }
+.principais-exames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 }
 /*------ FIM DA RESPONSIVIDADE ------*/
 
@@ -127,7 +141,7 @@ header{
 .conteudo {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     padding-top: 8vh;
     /* width: 90vw; */
     margin: auto;
@@ -135,19 +149,22 @@ header{
 
 /* ------ ESTILIZAÇÃO QUEM SOMOS/PRINCIPAIS EXAMES ------- */
 .body-quem-somos {
-    /* margin: 20px; */
-    /* position: relative; */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .body1 {
     display: flex;
     flex-direction: row;
     width: auto;
-    /* align-items: center; */
+    align-items: center;
     margin-top: 20px;
     align-items: flex-start;
 }
-
+.quemsomos{
+    min-width: 300px;
+}
 .body-quem-somos p{
     margin-top: 5em;
     text-align:justify;
@@ -161,9 +178,10 @@ header{
     border-radius: 2%;
 }
 .imagem02 {
+    display: block;
     margin: 20px;
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     border-radius: 2%;
 }
 .body2{
@@ -190,6 +208,13 @@ header{
 
 
 /* ------ ESTILIZAÇÃO PROCURE SEUS EXAMES/NOSSOS EXAMES ------- */
+.procure-seus-exames{
+    
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 #divBusca{
     background-color:#d1930de3;
     border:solid 1px;
@@ -234,6 +259,7 @@ header{
 .vejaMais{
     display: flex;
     justify-content: flex-start;
+    margin: left 10px;;
 }
 
 .nossos-exames {
@@ -288,11 +314,19 @@ h2 {
         align-items: center;
         min-width: 260px;
     }
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items:stretch
+    }
 }
 /* ------ FIM DA ESTILIZAÇÃO PROCURE SEUS EXAMES/NOSSOS EXAMES ------- */
 
 
 /* ------ ESTILIZAÇÃO NOSSOS SERVIÇOS ------- */
+.nossoServico h1{
+    margin-left: 10px;
+}
 .imagens-nossos-servicos{
     height: 50px;
     width: 50px;
