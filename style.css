@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif black;
 }
 
 html {
@@ -56,6 +56,14 @@ header{
     border-bottom: 2px solid;
     display: none;
     z-index: 2;
+}
+.menu-mobile a{
+    text-decoration: none;
+    color: black;    
+}
+.menu-nav a{
+    text-decoration: none;
+    color: black;    
 }
 
 .menu-mobile a{
@@ -132,8 +140,48 @@ header{
     flex-direction: column;
     align-items: center;
 }
-
 }
+
+@media (max-width: 1080px){
+    .nossos-exames{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        min-width: 260px;
+    }
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items:stretch
+    }
+}
+
+@media (max-width: 768px) {
+    .fale-conosco {
+        margin: 0px;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 0px;
+        margin-top: 5vh;
+    }
+    .fale-conosco h2{
+        text-align: center;
+    }
+    
+    .formulario {
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .formulario-botao-responsivo {
+        width: 100%;
+    }
+    }
+
 /*------ FIM DA RESPONSIVIDADE ------*/
 
 
@@ -145,6 +193,9 @@ header{
     padding-top: 8vh;
     /* width: 90vw; */
     margin: auto;
+}
+.conteudo h1{
+    color: #8B0D32;
 }
 
 /* ------ ESTILIZAÇÃO QUEM SOMOS/PRINCIPAIS EXAMES ------- */
@@ -213,13 +264,14 @@ header{
     margin: 10px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-content: flex-start;
 }
 #divBusca{
     background-color:#d1930de3;
     border:solid 1px;
     border-radius:15px;
-    max-width: 500px;
+    width:auto;
+    max-width: 600px;
     height: 35px;
   }
 #txtBusca{
@@ -278,7 +330,7 @@ header{
 }
 .nossos-exames a{
     /* text-decoration: none; */
-    color: brown;
+    color: #8B0D32;
 }
 .atalho-agendamento{
     font-size: 12px;
@@ -306,20 +358,6 @@ h2 {
     width: 220px;
 }
 
-@media (max-width: 1080px){
-    .nossos-exames{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        min-width: 260px;
-    }
-    .conteudo {
-        display: flex;
-        flex-direction: column;
-        align-items:stretch
-    }
-}
 /* ------ FIM DA ESTILIZAÇÃO PROCURE SEUS EXAMES/NOSSOS EXAMES ------- */
 
 
@@ -360,6 +398,7 @@ h2 {
     margin: 1vh;
     color: #8B0D32;
     font-weight: bold;
+    cursor: pointer;
 }
 .imagem-servicos{
     display: flex;
@@ -438,31 +477,6 @@ h2 {
 .formulario p{
     color: red;
     display: none;
-}
-
-@media (max-width: 768px) {
-.fale-conosco {
-    margin: 0px;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 0px;
-    margin-top: 5vh;
-}
-.fale-conosco h2{
-    text-align: center;
-}
-
-.formulario {
-    display: flex;
-    flex:1;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.formulario-botao-responsivo {
-    width: 100%;
-}
 }
 /* ------ FIM DA ESTILIZAÇÃO FALE CONOSCO------- */
 
