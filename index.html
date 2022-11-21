@@ -18,7 +18,7 @@
         <div class="menu-nav">
             <nav class="header-menu" id="navigationHeader">
                 <a class="header-menu-item">Agendamento de Exames</a>
-                <a class="header-menu-item">Serviços</a>
+                <a class="header-menu-item" href="#nossoServico">Serviços</a>
                 <a class="header-menu-item">Resultado de Exames</a>
                 <a class="header-menu-item">Unidades</a>
                 <a class="header-menu-item">Convênios</a>
@@ -38,7 +38,7 @@
         <div class="menu-mobile" id="itensMobile">
             <ul>
                 <li><a class="header-menu-item">Agendamento de Exames</a></li>
-                <li><a class="header-menu-item">Serviços</a></li>
+                <li><a class="header-menu-item" href="#nossoServico">Serviços</a></li>
                 <li><a class="header-menu-item">Resultado de Exames</a></li>
                 <li><a class="header-menu-item">Unidades</a></li>
                 <li><a class="header-menu-item">Convênios</a></li>
@@ -57,19 +57,14 @@
                             Laboratório especializado em exames laboratoriais realizamos mais de 100 tipos de exames
                             em nossas unidades.</p>
                     </div>
-
-                    <!-- <div class="imagem001"> -->
                         <img class="imagem01" src="images/imagemlaboratorio.webp" alt="imagem laboratório">
-                    <!-- </div> -->
                 </div>
 
                 <div class="body2">
 
-                    
                     <img class="imagem02" src="images/imagem02.jpg" alt="imagem dos exames">
 
                     <div class="principais-exames">
-                        <!-- <div class="ex"> -->
                             <h1>Principais Exames</h1>
                             <ul>
                                 <li>Hemograma</li>
@@ -78,42 +73,83 @@
                                 <li>Transaminases</li>
                                 <li>TSH e T4 livre</li>
                             </ul>
-                        <!-- </div> -->
                     </div>
+
                 </div>
             </div>
     
-        <div>
-            <h1>Procure seus Exames</h1>
+        <div class="procure-seus-exames">
+            <h1>Procure seus Exames:</h1>
+            <div id="divBusca">     
+                <input type="text" id="txtBusca" name="txtBuscaExamew" placeholder="Encontre seus exames...">
+                <img src="./images/lupa.png.png" id="btnBusca" alt="Buscar" >   
+            </div>
         </div>
-        <div>
-            <h2>Principais Exames</h2>
+        
+        <div class="exames">
+            <h1><strong>Nossos exames:</strong></h1>        
+            <div class="nossos-exames">
+                
+                <div class="exame-card">
+                    <img class="imagem-exame" src="images/teste-de-sangue.png" alt="exames">
+                    <h2>PCR-Coronavirus</h2>
+                    <p>Particular:<br><strong>R$200,00</strong></p>
+                    <p class="atalho-agendamento"><br><a href="#">Clique aqui para agendar</a></p>
+                </div>
+    
+                <div class="exame-card">
+                    <img class="imagem-exame" src="images/teste-de-sangue.png" alt="exames">
+                    <h2>Hemograma</h2>
+                    <p>Particular:<br><strong>R$120,00</strong></p>
+                    <p class="atalho-agendamento"><br><a href="#">Clique aqui para agendar</a></p>
+                </div>
+    
+                <div class="exame-card">
+                    <img class="imagem-exame" src="images/teste-de-sangue.png" alt="exames">
+                    <h2>Glicemia</h2>
+                    <p>Particular:<br><strong>R$110,00</strong></p>
+                    <p class="atalho-agendamento"><br><a href="#">Clique aqui para agendar</a></p>
+                    
+                </div>
+    
+                <div class="exame-card">
+                    <img class="imagem-exame" src="images/teste-de-sangue.png" alt="exames">
+                    <h2>Colesterol</h2>
+                    <p>Particular:<br><strong>R$100,00</strong></p>
+                    <p class="atalho-agendamento"><br><a href="#">Clique aqui para agendar</a></p>
+                </div>
+                
+            </div>
         </div>
-
-        <div>
+            <div class="vejaMais">
+                <h2>Veja mais</h2>
+                <a href="#"><img class="imagem-veja-mais" src="images/avanco-rapido.png" alt="botão veja mais"></a>
+            </div>
+        
+        <div class="nossoServico" id="nossoServico">
             <h1>Nossos Serviços:</h1>
             <div class="nossos-servicos">
                 <div class="imagem-servicos">
                     <a href="#"><img class= "imagens-nossos-servicos" src="images/calendar.png" alt="imagem agendamento de exames"></a>
-                    <h3>Agendamento de Exames!</h3>
+                    <a href="#"></a><h3>Agendamento de Exames!</h3></a>
                     <p>Encontre o exame que você precisa, através do nome, especialidade ou unidade de atendimento da sua preferência. Remarque e cancele a qualquer momento.</p>
                 </div>
 
                 <div class="imagem-servicos">
                     <a href="#"><img class= "imagens-nossos-servicos" src="images/resultados.png" alt="resulado de exames"></a>
-                    <h3>Resultados de Exames!</h3>
+                    <a href="#"></a><h3>Resultados de Exames!</h3></a>
                     <p>Para visualizar seus exames e resultados com praticidade e agilidade.</p>
                 </div>
 
                 <div class="imagem-servicos">
                     <a href="#"><img class= "imagens-nossos-servicos" src="images/protecao.png" alt="convênios atendidos"></a>
-                    <h3>Convênios Atendidos!</h3>
+                    <a href="#"></a><h3>Convênios Atendidos!</h3></a>
                     <p>Selecione a sua operadora de saúde e confira a lista de planos atendidos e documentos necessários para a realização dos seus exames com segurança e praticidade.</p>
                 </div>
 
                 <div class="imagem-servicos">
                     <a href="#"><img class= "imagens-nossos-servicos" src="images/exame-medico.png" alt="exames domiciliar"></a>
-                    <h3>Exames domiciliar!</h3>
+                    <a href="#"></a><h3>Exames domiciliar!</h3></a>
                     <p>Cuide da sua saúde onde você estiver. Realize exames no conforto de sua casa.</p>
                 </div>
             </div>
