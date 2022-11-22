@@ -135,9 +135,6 @@ header{
     align-items: center;
 }
 }
-
-
-
 /*------ FIM DA RESPONSIVIDADE ------*/
 
 
@@ -206,8 +203,6 @@ header{
     width: auto;
 }
 .principais-exames {
-    /* margin: 20px; */
-    /* padding-left: 8vh; */
     min-width: 350px;
     margin-bottom: 10px;
 }
@@ -264,12 +259,10 @@ header{
 
 /* ------ ESTILIZAÇÃO PROCURE SEUS EXAMES/NOSSOS EXAMES ------- */
 .procure-seus-exames{
-    
     margin: 10px;
     display: flex;
     flex-direction: column;
-    /* align-content: flex-start; */
-    margin-right: 45%;
+    margin-right: 35%;
 }
 #divBusca{
     background-color:#d1930de3;
@@ -345,7 +338,6 @@ header{
     border-radius: 30px;
 }
 .nossos-exames a{
-    /* text-decoration: none; */
     color: #8B0D32;
 }
 .atalho-agendamento{
@@ -380,26 +372,27 @@ h2 {
 .exame-card p a:hover{
     padding-left: 5px;
 }
+
 @media (max-width: 1080px){
-    .nossos-exames{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        min-width: 260px;
-    }
-    .conteudo {
-        display: flex;
-        flex-direction: column;
-        align-items:stretch;
-    }
-    #divBusca{
-        width: auto;
-        min-width: 300px;
-    }
-    .exames h1{
-        margin-right:1em;
-    }
+.nossos-exames{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: 260px;
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+}
+#divBusca{
+    width: auto;
+    min-width: 300px;
+}
+.exames h1{
+    margin-right:1em;
+}
 }
 /* ------ FIM DA ESTILIZAÇÃO PROCURE SEUS EXAMES/NOSSOS EXAMES ------- */
 
@@ -528,29 +521,29 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    .fale-conosco {
-        margin: 0px;
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-radius: 0px;
-        margin-top: 5vh;
-    }
-    .fale-conosco h2{
-        text-align: center;
-    }
-    
-    .formulario {
-        display: flex;
-        flex:1;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .formulario-botao-responsivo {
-        width: 100%;
-    }
-    }
+.fale-conosco {
+    margin: 0px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0px;
+    margin-top: 5vh;
+}
+.fale-conosco h2{
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario-botao-responsivo {
+    width: 100%;
+}
+}
 /* ------ FIM DA ESTILIZAÇÃO FALE CONOSCO------- */
 
 
