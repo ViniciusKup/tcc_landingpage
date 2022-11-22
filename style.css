@@ -192,16 +192,27 @@ header{
     border-radius: 2%;
     transition: 0.1s;
 }
+.imagem02-resp{
+    display: none;
+    margin: 20px;
+    width: 600px;
+    height: 400px;
+    border-radius: 2%;
+    transition: 0.1s;
+}
 .body2{
     display: flex;
     flex-direction: row;
     width: auto;
 }
 .principais-exames {
-    margin: 20px;
+    /* margin: 20px; */
+    /* padding-left: 8vh; */
+    min-width: 350px;
+    margin-bottom: 10px;
 }
 .principais-exames ul{
-    margin-top: 3em;
+    margin-top: 5em;
 }
 .principais-exames li{
     text-decoration: none;
@@ -213,21 +224,39 @@ header{
     cursor: pointer;
 }
 
-@media (max-width:1080px){
-    .imagem01 , .imagem02 {
-        width: 400px;
-        height: 250px;
-    }
+@media (min-width:840px){
+.principais-exames {
+    margin: 20px;
+    padding-left: 8vh;
+    min-width: 350px;   
 }
-@media (max-width: 840px){
+}
+@media (max-width:1080px){
+.imagem01 , .imagem02 {
+    width: 400px;
+    height: 250px;
+}
+}
+@media (max-width: 769px){
 .body2{
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
 }
-.imagem01 , .imagem02 {
-
+.imagem02{
+    display: none;
+}
+.imagem02-resp{
+    display: block;
     width: 300px;
     height: 200px;;
+}
+.imagem01 , .imagem02 {
+    width: 300px;
+    height: 200px;;
+}
+.principais-exames ul{
+    margin-top: 1em;
 }
 }
 /* ------ FIM DA ESTILIZAÇÃO QUEM SOMOS/PRINCIPAIS EXAMES ------- */
@@ -239,7 +268,8 @@ header{
     margin: 10px;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    /* align-content: flex-start; */
+    margin-right: 45%;
 }
 #divBusca{
     background-color:#d1930de3;
@@ -247,6 +277,7 @@ header{
     border-radius:15px;
     width:auto;
     max-width: 600px;
+    width: 500px;
     height: 35px;
   }
 #txtBusca{
@@ -256,13 +287,18 @@ header{
     font-style:italic;
     font-size:18px;
     border:none;
-    height:95%;
+    border-radius: 15px;
+    height:100%;
     width:90%;
   }
 #btnBusca{
     height: 20px;
     margin:8px 0 8px 0;
     cursor: pointer;
+  }
+
+::placeholder{
+    color: rgb(40, 40, 40);
   }
 .exames{
     display: flex;
@@ -286,8 +322,12 @@ header{
 .vejaMais{
     display: flex;
     justify-content: flex-start;
-    margin: left 10px;;
+    margin-left: 50%;;
     margin-bottom: 10px;
+}
+.vejaMais a:hover{
+    padding-left: 10px;
+    transition: 0.5s;
 }
 
 .nossos-exames {
@@ -320,6 +360,9 @@ h2 {
     font-size: 1.5em;
     margin: 0.5vh;
 }
+.exames h1{
+    margin-right: 65%;
+}
 
 .exame-card{
     display: flex;
@@ -333,6 +376,10 @@ h2 {
     height: 220px;
     width: 220px;
 }
+
+.exame-card p a:hover{
+    padding-left: 5px;
+}
 @media (max-width: 1080px){
     .nossos-exames{
         display: flex;
@@ -345,6 +392,13 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items:stretch;
+    }
+    #divBusca{
+        width: auto;
+        min-width: 300px;
+    }
+    .exames h1{
+        margin-right:1em;
     }
 }
 /* ------ FIM DA ESTILIZAÇÃO PROCURE SEUS EXAMES/NOSSOS EXAMES ------- */
@@ -363,6 +417,10 @@ h2 {
     border: 0.2px solid black;
     border-radius: 50%;
     cursor: pointer;
+}
+.nossos-servicos a:hover{
+    padding-left: 10px;
+    transition: 0.5s;
 }
 .nossos-servicos{
     width: auto;
