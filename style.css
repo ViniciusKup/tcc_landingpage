@@ -109,6 +109,11 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
 }
+.windowFaleConosco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
 
 
